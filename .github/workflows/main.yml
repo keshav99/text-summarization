@@ -1,0 +1,11 @@
+- name: Huggingface Login
+  # You may pin to the exact commit or the version.
+  # uses: osbm/huggingface-login@18449429117bab7731442add2cece2a324f1fab2
+  uses: osbm/huggingface-login@v0.0.2
+  with:
+    # Huggingface Username
+    username: keshav99
+    # Huggingface token
+    key: {{ secrets.HG }}
+    # Add to git credentials
+    add_to_git_credentials: # optional, default is false
